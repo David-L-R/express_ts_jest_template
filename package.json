@@ -1,0 +1,42 @@
+{
+	"name": "node_ts_config",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc --build",
+		"clean": "tsc --build --clean",
+		"start": "nodemon ./src/index.ts",
+		"lint": "eslint . --ext .ts",
+		"prettier": "prettier --config .prettierrc 'src/**/*.ts' --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/David-L-R/Node_TS_Config_Workshop.git"
+	},
+	"keywords": [
+		"Typescript",
+		"Node",
+		"Config",
+		"ESLint",
+		"Prettier"
+	],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/David-L-R/Node_TS_Config_Workshop/issues"
+	},
+	"homepage": "https://github.com/David-L-R/Node_TS_Config_Workshop#readme",
+	"devDependencies": {
+		"@types/node": "^17.0.35",
+		"@typescript-eslint/eslint-plugin": "^5.26.0",
+		"@typescript-eslint/parser": "^5.26.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"nodemon": "^2.0.16",
+		"prettier": "^2.6.2",
+		"ts-node": "^10.8.0",
+		"typescript": "^4.7.2"
+	}
+}

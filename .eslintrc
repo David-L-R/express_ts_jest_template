@@ -1,0 +1,22 @@
+{
+	"extends": [
+		"plugin:@typescript-eslint/recommended",
+		"prettier",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint", "prettier"],
+	"rules": {
+		"prettier/prettier": 2, // Means error,
+		"no-console": 1,
+		"no-var": 2
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"env": {
+		"es6": true
+	}
+}
