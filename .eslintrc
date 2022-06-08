@@ -6,17 +6,19 @@
 		"plugin:@typescript-eslint/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
-	"plugins": ["@typescript-eslint", "prettier"],
+	"plugins": ["@typescript-eslint", "prettier", "jest"],
 	"rules": {
 		"prettier/prettier": 2, // Means error,
 		"no-console": 1,
 		"no-var": 2
 	},
 	"parserOptions": {
-		"ecmaVersion": 2018,
+		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
 	"env": {
-		"es6": true
+		"browser": true,
+		"es2021": true,
+		"jest/globals": true
 	}
 }
