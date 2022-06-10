@@ -1,9 +1,8 @@
 import { Router, Request, Response } from 'express'
+import ExampleCtrl from '../controllers/example'
 
 const router = Router()
 
-router.get('/', (req: Request, res: Response): void => {
-	res.send('This is just an example, you can remove it')
-})
+router.get('/', ExampleCtrl.getAll)
 
 export default router
